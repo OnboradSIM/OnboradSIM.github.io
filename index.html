@@ -3,40 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="OnboardSIM: Real-time onboard terrain classification from Sentinel-1 level-0 raw data using Stacked Intelligent Metasurface-Diffractive Deep Neural Networks">
-    <meta name="keywords" content="OnboardSIM, Terrain Classification, Stacked Intelligent Metasurface, Diffractive Deep Neural Network, SAR, Synthetic Aperture Radar, Remote Sensing">
+    <meta name="description" content="OnboardSIM: Real-time onboard terrain classification from Sentinel-1 level-0 raw data using Stacked Intelligent Metasurface-Diffractive Deep Neural Networks. Achieves 90% accuracy in terrain classification directly from raw SAR data.">
+    <meta name="keywords" content="OnboardSIM, Terrain Classification, Stacked Intelligent Metasurface, Diffractive Deep Neural Network, SAR, Synthetic Aperture Radar, Remote Sensing, ICLR 2025, ML4RS Workshop">
     <meta name="author" content="Mengbing Liu, Xin Li, Jiancheng An, Chau Yuen">
     
-    <title>OnboardSIM: Terrain Classification via Stacked Intelligent Metasurface-Diffractive Deep Neural Networks</title>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://OnboradSIM.github.io/">
+    <meta property="og:title" content="OnboardSIM: Onboard Terrain Classification via Stacked Intelligent Metasurface-Diffractive Deep Neural Networks from SAR Level-0 Raw Data">
+    <meta property="og:description" content="Real-time onboard terrain classification from Sentinel-1 level-0 raw data using Stacked Intelligent Metasurface-Diffractive Deep Neural Networks. Achieves 90% accuracy.">
+    <meta property="og:image" content="https://OnboradSIM.github.io/images/SIM_based_D2NN_model_1.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://OnboradSIM.github.io/">
+    <meta property="twitter:title" content="OnboardSIM: Onboard Terrain Classification via Stacked Intelligent Metasurface-Diffractive Deep Neural Networks from SAR Level-0 Raw Data">
+    <meta property="twitter:description" content="Real-time onboard terrain classification from Sentinel-1 level-0 raw data using Stacked Intelligent Metasurface-Diffractive Deep Neural Networks. Achieves 90% accuracy.">
+    <meta property="twitter:image" content="https://OnboradSIM.github.io/images/SIM_based_D2NN_model_1.png">
+    
+    <title>OnboardSIM: Terrain Classification via Stacked Intelligent Metasurface-Diffractive Deep Neural Networks | ICLR 2025 ML4RS Workshop</title>
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": "Onboard Terrain Classification via Stacked Intelligent Metasurface-Diffractive Deep Neural Networks from SAR Level-0 Raw Data",
+        "image": "https://OnboradSIM.github.io/images/SIM_based_D2NN_model_1.png",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Mengbing Liu",
+                "url": "https://liumengbing.com/"
+            },
+            {
+                "@type": "Person",
+                "name": "Xin Li",
+                "url": "https://lixin.ai/"
+            },
+            {
+                "@type": "Person",
+                "name": "Jiancheng An",
+                "url": "https://scholar.google.com/citations?user=QbTi47kAAAAJ&hl"
+            },
+            {
+                "@type": "Person",
+                "name": "Chau Yuen",
+                "url": "https://blogs.ntu.edu.sg/chau-yuen/"
+            }
+        ],
+        "publisher": {
+            "@type": "Organization",
+            "name": "Nanyang Technological University",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "Singapore"
+            }
+        },
+        "datePublished": "2025-04-27",
+        "dateModified": "2025-04-27",
+        "description": "This paper introduces a novel approach for real-time onboard terrain classification from Sentinel-1 (S1) level-0 raw In-phase/Quadrature (IQ) data, leveraging a Stacked Intelligent Metasurface (SIM) to perform inference directly in the analog wave domain.",
+        "keywords": "OnboardSIM, Terrain Classification, Stacked Intelligent Metasurface, Diffractive Deep Neural Network, SAR, Synthetic Aperture Radar, Remote Sensing",
+        "url": "https://OnboradSIM.github.io/",
+        "sameAs": "https://www.arxiv.org/pdf/2503.13488"
+    }
+    </script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" role="banner">
         <div class="container">
             <h1>OnboardSIM</h1>
             <h2>Onboard Terrain Classification via Stacked Intelligent Metasurface-Diffractive Deep Neural Networks from SAR Level-0 Raw Data</h2>
             <div class="conference-badge">
-                <a href="https://ml-for-rs.github.io/iclr2025/" target="_blank" class="conference-link">
+                <a href="https://ml-for-rs.github.io/iclr2025/" target="_blank" class="conference-link" aria-label="View ICLR 2025 ML4RS Workshop page">
                     <p class="conference">Accepted to the 3rd ML4RS Workshop at ICLR 2025, April 27th 2025, Singapore</p>
                 </a>
             </div>
             
             <div class="authors-container">
-                <div class="authors">
-                    <div class="author">
-                        <a href="https://liumengbing.com/" target="_blank"><span>Mengbing Liu</span></a>
+                <div class="authors" role="list">
+                    <div class="author" role="listitem">
+                        <a href="https://liumengbing.com/" target="_blank" aria-label="Visit Mengbing Liu's website"><span>Mengbing Liu</span></a>
                     </div>
-                    <div class="author">
-                        <a href="https://lixin.ai/" target="_blank"><span>Xin Li</span></a>
+                    <div class="author" role="listitem">
+                        <a href="https://lixin.ai/" target="_blank" aria-label="Visit Xin Li's website"><span>Xin Li</span></a>
                     </div>
-                    <div class="author">
-                        <a href="https://scholar.google.com/citations?user=QbTi47kAAAAJ&hl" target="_blank"><span>Jiancheng An</span></a>
+                    <div class="author" role="listitem">
+                        <a href="https://scholar.google.com/citations?user=QbTi47kAAAAJ&hl" target="_blank" aria-label="View Jiancheng An's Google Scholar profile"><span>Jiancheng An</span></a>
                     </div>
-                    <div class="author">
-                        <a href="https://blogs.ntu.edu.sg/chau-yuen/" target="_blank"><span>Chau Yuen</span></a>
+                    <div class="author" role="listitem">
+                        <a href="https://blogs.ntu.edu.sg/chau-yuen/" target="_blank" aria-label="Visit Chau Yuen's website"><span>Chau Yuen</span></a>
                     </div>
                 </div>
                 <div class="single-affiliation">
@@ -44,230 +104,231 @@
                 </div>
             </div>
             
-            <div class="links">
-                <a href="https://www.arxiv.org/pdf/2503.13488" class="button"><i class="fas fa-file-pdf"></i> Paper</a>
-                <a href="poster/OnBoardSIM_Poster.pdf" class="button"><i class="fas fa-images"></i> Poster</a>
-                <!-- <a href="#" class="button"><i class="fas fa-video"></i> Video</a> -->
-            </div>
+            <nav class="links" role="navigation" aria-label="Paper resources">
+                <a href="https://www.arxiv.org/pdf/2503.13488" class="button" aria-label="Download paper PDF"><i class="fas fa-file-pdf"></i> Paper</a>
+                <a href="poster/OnBoardSIM_Poster.pdf" class="button" aria-label="Download poster PDF"><i class="fas fa-images"></i> Poster</a>
+            </nav>
         </div>
     </header>
 
-    <section class="teaser">
-        <div class="container">
-            <div class="teaser-wrapper">
-                <img src="images/SIM_based_D2NN_model_1.png" alt="High-level system overview" class="teaser-image">
-                <p class="caption">Figure 1: High-level system overview comparing traditional DNN-based learning from level-1 data vs. proposed D²NN-based learning from level-0 data.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="abstract" id="abstract">
-        <div class="container">
-            <h2>Abstract</h2>
-            <p>
-                This paper introduces a novel approach for real-time onboard terrain classification from Sentinel-1 (S1) level-0 raw In-phase/Quadrature (IQ) data, leveraging a Stacked Intelligent Metasurface (SIM) to perform inference directly in the analog wave domain. Unlike conventional digital deep neural networks, the proposed multi-layer Diffractive Deep Neural Network (D²NN) setup implements automatic feature extraction as electromagnetic waves propagate through stacked metasurface layers. This design not only reduces reliance on expensive downlink bandwidth and high-power computing at terrestrial stations but also achieves performance levels around <strong>90%</strong> directly from the real raw IQ data, in terms of accuracy, precision, recall, and F1 Score. Our method therefore helps bridge the gap between next-generation remote sensing tasks and in-orbit processing needs, paving the way for computationally efficient remote sensing applications.
-            </p>
-        </div>
-    </section>
-
-    <section class="overview" id="overview">
-        <div class="container">
-            <h2>Project Overview</h2>
-            <div class="overview-content">
-                <div class="overview-text">
-                    <p>
-                        Space-borne remote sensing missions increasingly rely on Synthetic Aperture Radar (SAR) data to support environmental and societal applications. However, the continuous growth in data volume poses significant challenges in terms of downlink bandwidth, energy consumption, and real-time processing.
-                    </p>
-                    <p>
-                        Our research introduces a wave-based diffractive deep neural network (D²NN) framework that processes S1 level-0 raw IQ data in orbit, reducing the need for extensive data transmission and computing resources at terrestrial stations. The multi-layer SIM-based approach performs layer-by-layer feature extraction in the electromagnetic domain, achieving higher representational capacity than single-layer systems.
-                    </p>
-                </div>
-                <div class="overview-image">
-                    <img src="images/SIM_structure.png" alt="SIM Structure" class="img-fluid">
-                    <p class="caption">The illustration of the SIM structure and corresponding parameters.</p>
+    <main role="main">
+        <section class="teaser" aria-labelledby="teaser-title">
+            <div class="container">
+                <div class="teaser-wrapper">
+                    <img src="images/SIM_based_D2NN_model_1.png" alt="High-level system overview showing the comparison between traditional DNN-based learning from level-1 data and proposed D²NN-based learning from level-0 data" class="teaser-image">
+                    <p class="caption">Figure 1: High-level system overview comparing traditional DNN-based learning from level-1 data vs. proposed D²NN-based learning from level-0 data.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="methodology" id="methodology">
-        <div class="container">
-            <h2>Methodology</h2>
-            <div class="methodology-content">
-                <div class="method-item">
-                    <h3>Multi-Layer Metasurface Inference</h3>
-                    <p>
-                        We design a multi-layer SIM-based approach that performs layer-by-layer feature extraction in the electromagnetic domain. By leveraging analog wave propagation and straightforward data augmentation techniques, our method enhances efficiency while reducing computational load and bandwidth requirements.
-                    </p>
-                </div>
-                
-                <div class="method-item">
-                    <h3>Enhancement through Data Augmentation</h3>
-                    <p>
-                        Our research indicates that omitting phase-rotation data augmentation results in a substantial decrease in the F1 Score (from 90.60% to 69.35%). This highlights the essential role of data augmentation strategies in mitigating the inherent noise and Doppler effects in raw level-0 data.
-                    </p>
-                </div>
-                
-                <div class="method-item">
-                    <h3>Wave Propagation Model</h3>
-                    <p>
-                        The model leverages transmission matrices between metasurface layers to enable efficient wave-based computation. The overall propagation matrix facilitates feature extraction as electromagnetic waves propagate through the system, enabling efficient classification without the need for traditional digital processing.
-                    </p>
-                </div>
+        <section class="abstract" id="abstract" aria-labelledby="abstract-title">
+            <div class="container">
+                <h2 id="abstract-title">Abstract</h2>
+                <p>
+                    This paper introduces a novel approach for real-time onboard terrain classification from Sentinel-1 (S1) level-0 raw In-phase/Quadrature (IQ) data, leveraging a Stacked Intelligent Metasurface (SIM) to perform inference directly in the analog wave domain. Unlike conventional digital deep neural networks, the proposed multi-layer Diffractive Deep Neural Network (D²NN) setup implements automatic feature extraction as electromagnetic waves propagate through stacked metasurface layers. This design not only reduces reliance on expensive downlink bandwidth and high-power computing at terrestrial stations but also achieves performance levels around <strong>90%</strong> directly from the real raw IQ data, in terms of accuracy, precision, recall, and F1 Score. Our method therefore helps bridge the gap between next-generation remote sensing tasks and in-orbit processing needs, paving the way for computationally efficient remote sensing applications.
+                </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="results" id="results">
-        <div class="container">
-            <h2>Key Results</h2>
-            <div class="results-content">
-                <div class="results-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Ablation Setting</th>
-                                <th>Precision (%)</th>
-                                <th>Recall (%)</th>
-                                <th>F1 Score (%)</th>
-                                <th>Overall Accuracy (%)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>SIM-D²NN (L = 1)</td>
-                                <td>87.63</td>
-                                <td>91.27</td>
-                                <td>89.41</td>
-                                <td>83.44</td>
-                            </tr>
-                            <tr>
-                                <td>SIM-D²NN (L = 6)</td>
-                                <td>87.21</td>
-                                <td>92.87</td>
-                                <td>89.95</td>
-                                <td>88.15</td>
-                            </tr>
-                            <tr>
-                                <td>SIM-D²NN (S = 5%)</td>
-                                <td>87.84</td>
-                                <td>91.49</td>
-                                <td>89.62</td>
-                                <td>85.75</td>
-                            </tr>
-                            <tr>
-                                <td>SIM-D²NN (S = 20%)</td>
-                                <td>91.56</td>
-                                <td>93.98</td>
-                                <td>92.76</td>
-                                <td>89.31</td>
-                            </tr>
-                            <tr>
-                                <td>SIM-D²NN (P_t = 5 dBm)</td>
-                                <td>86.14</td>
-                                <td>92.20</td>
-                                <td>89.07</td>
-                                <td>80.29</td>
-                            </tr>
-                            <tr>
-                                <td>SIM-D²NN (No phase rotation)</td>
-                                <td>62.09</td>
-                                <td>78.54</td>
-                                <td>69.35</td>
-                                <td>54.97</td>
-                            </tr>
-                            <tr class="highlight">
-                                <td>SIM-D²NN (Baseline)</td>
-                                <td>90.54</td>
-                                <td>90.67</td>
-                                <td>90.60</td>
-                                <td>87.83</td>
-                            </tr>
-                            <tr class="digital">
-                                <td><em>Digital DNN</em></td>
-                                <td><em>94.78</em></td>
-                                <td><em>97.14</em></td>
-                                <td><em>95.95</em></td>
-                                <td><em>92.91</em></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class="table-note">Note: Our baseline SIM-D²NN uses L=4 layers, P_t=20 dBm, and S=10%.</p>
-                </div>
-                
-                <div class="visualization-results">
-                    <h3>Visualization Results</h3>
-                    <div class="visualization-grid">
-                        <div class="viz-item">
-                            <img src="images/Test_all_L4_norotation.png" alt="SIM-D²NN (No phase rotation)">
-                            <p>SIM-D²NN (No phase rotation)</p>
-                        </div>
-                        <div class="viz-item">
-                            <img src="images/Test_all_L4.png" alt="SIM-D²NN (Baseline)">
-                            <p>SIM-D²NN (Baseline)</p>
-                        </div>
-                        <div class="viz-item">
-                            <img src="images/Test_all_L4_digital.png" alt="Digital DNN">
-                            <p>Digital DNN</p>
-                        </div>
-                        <div class="viz-item">
-                            <img src="images/True_Mask.png" alt="Ground Truth Label">
-                            <p>Ground Truth Label</p>
-                        </div>
+        <section class="overview" id="overview" aria-labelledby="overview-title">
+            <div class="container">
+                <h2 id="overview-title">Project Overview</h2>
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <p>
+                            Space-borne remote sensing missions increasingly rely on Synthetic Aperture Radar (SAR) data to support environmental and societal applications. However, the continuous growth in data volume poses significant challenges in terms of downlink bandwidth, energy consumption, and real-time processing.
+                        </p>
+                        <p>
+                            Our research introduces a wave-based diffractive deep neural network (D²NN) framework that processes S1 level-0 raw IQ data in orbit, reducing the need for extensive data transmission and computing resources at terrestrial stations. The multi-layer SIM-based approach performs layer-by-layer feature extraction in the electromagnetic domain, achieving higher representational capacity than single-layer systems.
+                        </p>
                     </div>
-                    <p class="visualization-caption">Comparison of the visualization results under different methods.</p>
+                    <div class="overview-image">
+                        <img src="images/SIM_structure.png" alt="SIM Structure" class="img-fluid">
+                        <p class="caption">The illustration of the SIM structure and corresponding parameters.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="conclusion" id="conclusion">
-        <div class="container">
-            <h2>Conclusion</h2>
-            <p>
-                We have developed a multi-layer, SIM-D²NN designed to process S1 raw IQ data for terrain classification. By harnessing the inherent properties of wave propagation through multiple metasurface layers, this approach has demonstrated the ability to achieve as high a performance as around 90%. This significant performance boost reduces dependence on digital processing backends and lowers the costs associated with data transmission. These encouraging outcomes underscore the potential of wave-domain analog computing to revolutionize remote sensing technologies, offering faster, more efficient, and sustainable solutions for Earth observation.
-            </p>
-        </div>
-    </section>
+        <section class="methodology" id="methodology" aria-labelledby="methodology-title">
+            <div class="container">
+                <h2 id="methodology-title">Methodology</h2>
+                <div class="methodology-content">
+                    <div class="method-item">
+                        <h3>Multi-Layer Metasurface Inference</h3>
+                        <p>
+                            We design a multi-layer SIM-based approach that performs layer-by-layer feature extraction in the electromagnetic domain. By leveraging analog wave propagation and straightforward data augmentation techniques, our method enhances efficiency while reducing computational load and bandwidth requirements.
+                        </p>
+                    </div>
+                    
+                    <div class="method-item">
+                        <h3>Enhancement through Data Augmentation</h3>
+                        <p>
+                            Our research indicates that omitting phase-rotation data augmentation results in a substantial decrease in the F1 Score (from 90.60% to 69.35%). This highlights the essential role of data augmentation strategies in mitigating the inherent noise and Doppler effects in raw level-0 data.
+                        </p>
+                    </div>
+                    
+                    <div class="method-item">
+                        <h3>Wave Propagation Model</h3>
+                        <p>
+                            The model leverages transmission matrices between metasurface layers to enable efficient wave-based computation. The overall propagation matrix facilitates feature extraction as electromagnetic waves propagate through the system, enabling efficient classification without the need for traditional digital processing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="acknowledgments" id="acknowledgments">
-        <div class="container">
-            <h2>Acknowledgments</h2>
-            <p>
-                This research received funding from the Agency for Science, Technology and Research (A*STAR), Singapore, under Grant No. M22L1b0110. It was also supported by the National Research Foundation, Singapore, and the Infocomm Media Development Authority under the Future Communications Research & Development Programme (FCP-NTU-RG-2024-025).
-            </p>
-        </div>
-    </section>
+        <section class="results" id="results" aria-labelledby="results-title">
+            <div class="container">
+                <h2 id="results-title">Key Results</h2>
+                <div class="results-content">
+                    <div class="results-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Ablation Setting</th>
+                                    <th>Precision (%)</th>
+                                    <th>Recall (%)</th>
+                                    <th>F1 Score (%)</th>
+                                    <th>Overall Accuracy (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SIM-D²NN (L = 1)</td>
+                                    <td>87.63</td>
+                                    <td>91.27</td>
+                                    <td>89.41</td>
+                                    <td>83.44</td>
+                                </tr>
+                                <tr>
+                                    <td>SIM-D²NN (L = 6)</td>
+                                    <td>87.21</td>
+                                    <td>92.87</td>
+                                    <td>89.95</td>
+                                    <td>88.15</td>
+                                </tr>
+                                <tr>
+                                    <td>SIM-D²NN (S = 5%)</td>
+                                    <td>87.84</td>
+                                    <td>91.49</td>
+                                    <td>89.62</td>
+                                    <td>85.75</td>
+                                </tr>
+                                <tr>
+                                    <td>SIM-D²NN (S = 20%)</td>
+                                    <td>91.56</td>
+                                    <td>93.98</td>
+                                    <td>92.76</td>
+                                    <td>89.31</td>
+                                </tr>
+                                <tr>
+                                    <td>SIM-D²NN (P_t = 5 dBm)</td>
+                                    <td>86.14</td>
+                                    <td>92.20</td>
+                                    <td>89.07</td>
+                                    <td>80.29</td>
+                                </tr>
+                                <tr>
+                                    <td>SIM-D²NN (No phase rotation)</td>
+                                    <td>62.09</td>
+                                    <td>78.54</td>
+                                    <td>69.35</td>
+                                    <td>54.97</td>
+                                </tr>
+                                <tr class="highlight">
+                                    <td>SIM-D²NN (Baseline)</td>
+                                    <td>90.54</td>
+                                    <td>90.67</td>
+                                    <td>90.60</td>
+                                    <td>87.83</td>
+                                </tr>
+                                <tr class="digital">
+                                    <td><em>Digital DNN</em></td>
+                                    <td><em>94.78</em></td>
+                                    <td><em>97.14</em></td>
+                                    <td><em>95.95</em></td>
+                                    <td><em>92.91</em></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="table-note">Note: Our baseline SIM-D²NN uses L=4 layers, P_t=20 dBm, and S=10%.</p>
+                    </div>
+                    
+                    <div class="visualization-results">
+                        <h3>Visualization Results</h3>
+                        <div class="visualization-grid">
+                            <div class="viz-item">
+                                <img src="images/Test_all_L4_norotation.png" alt="SIM-D²NN (No phase rotation)">
+                                <p>SIM-D²NN (No phase rotation)</p>
+                            </div>
+                            <div class="viz-item">
+                                <img src="images/Test_all_L4.png" alt="SIM-D²NN (Baseline)">
+                                <p>SIM-D²NN (Baseline)</p>
+                            </div>
+                            <div class="viz-item">
+                                <img src="images/Test_all_L4_digital.png" alt="Digital DNN">
+                                <p>Digital DNN</p>
+                            </div>
+                            <div class="viz-item">
+                                <img src="images/True_Mask.png" alt="Ground Truth Label">
+                                <p>Ground Truth Label</p>
+                            </div>
+                        </div>
+                        <p class="visualization-caption">Comparison of the visualization results under different methods.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="citation" id="citation">
-        <div class="container">
-            <h2>Citation</h2>
-            <div class="citation-content">
-                <p>If you find this work useful for your research, please consider citing:</p>
-                <div class="bibtex-container">
-                    <pre class="bibtex" id="bibtex-text">@article{liu2025onboard,
+        <section class="conclusion" id="conclusion" aria-labelledby="conclusion-title">
+            <div class="container">
+                <h2 id="conclusion-title">Conclusion</h2>
+                <p>
+                    We have developed a multi-layer, SIM-D²NN designed to process S1 raw IQ data for terrain classification. By harnessing the inherent properties of wave propagation through multiple metasurface layers, this approach has demonstrated the ability to achieve as high a performance as around 90%. This significant performance boost reduces dependence on digital processing backends and lowers the costs associated with data transmission. These encouraging outcomes underscore the potential of wave-domain analog computing to revolutionize remote sensing technologies, offering faster, more efficient, and sustainable solutions for Earth observation.
+                </p>
+            </div>
+        </section>
+
+        <section class="acknowledgments" id="acknowledgments" aria-labelledby="acknowledgments-title">
+            <div class="container">
+                <h2 id="acknowledgments-title">Acknowledgments</h2>
+                <p>
+                    This research received funding from the Agency for Science, Technology and Research (A*STAR), Singapore, under Grant No. M22L1b0110. It was also supported by the National Research Foundation, Singapore, and the Infocomm Media Development Authority under the Future Communications Research & Development Programme (FCP-NTU-RG-2024-025).
+                </p>
+            </div>
+        </section>
+
+        <section class="citation" id="citation" aria-labelledby="citation-title">
+            <div class="container">
+                <h2 id="citation-title">Citation</h2>
+                <div class="citation-content">
+                    <p>If you find this work useful for your research, please consider citing:</p>
+                    <div class="bibtex-container">
+                        <pre class="bibtex" id="bibtex-text">@article{liu2025onboard,
   title={Onboard Terrain Classification via Stacked Intelligent Metasurface-Diffractive Deep Neural Networks from SAR Level-0 Raw Data},
   author={Liu, Mengbing and Li, Xin and An, Jiancheng and Yuen, Chau},
   journal={ICLR ML4RS Workshop},
   year={2025}
 }</pre>
-                    <button class="copy-btn" id="copy-button">
-                        <i class="fas fa-copy"></i> Copy
-                    </button>
-                    <span class="copy-notice" id="copy-notice">Copied!</span>
+                        <button class="copy-btn" id="copy-button">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                        <span class="copy-notice" id="copy-notice">Copied!</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <p>© 2024 School of Electrical and Electronics Engineering (EEE), Nanyang Technological University, Singapore</p>
             <p>Contact: <a href="mailto:mengbing001@e.ntu.edu.sg">mengbing001@e.ntu.edu.sg</a>, <a href="mailto:xin019@e.ntu.edu.sg">xin019@e.ntu.edu.sg</a></p>
         </div>
     </footer>
 
-    <a href="#" class="back-to-top">
+    <a href="#" class="back-to-top" aria-label="Back to top of page">
         <i class="fas fa-arrow-up"></i>
     </a>
 
